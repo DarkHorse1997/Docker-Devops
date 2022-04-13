@@ -1,0 +1,39 @@
+Script started on 2022-04-13 15:42:40+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="145" LINES="32"]
+[?2004h]0;dh97@dh97-IdeaPad: ~/code/Docker-Devops[01;32mdh97@dh97-IdeaPad[00m:[01;34m~/code/Docker-Devops[00m$ d[Kexitdocker exec -it secret-message bashrun -d --rm -it --name secret-message devopsdockeruh/simple-web-service:ubuntu
+[?2004l
+414f3cf73ae02dc048c681db8299db8b6acd5ca17a2e584aebb4ae302547c71f
+[?2004h]0;dh97@dh97-IdeaPad: ~/code/Docker-Devops[01;32mdh97@dh97-IdeaPad[00m:[01;34m~/code/Docker-Devops[00m$ docker run -d --rm -it --name secret-message devopsdockeruh/simple-web-service:ubuntu
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdocker exec -it secret-message bash
+[?2004l
+]0;root@414f3cf73ae0: /usr/src/approot@414f3cf73ae0:/usr/src/app# tail -f ./text.log
+2022-04-13 10:12:49 +0000 UTC
+2022-04-13 10:12:51 +0000 UTC
+2022-04-13 10:12:53 +0000 UTC
+2022-04-13 10:12:55 +0000 UTC
+2022-04-13 10:12:57 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-04-13 10:12:59 +0000 UTC
+2022-04-13 10:13:01 +0000 UTC
+2022-04-13 10:13:03 +0000 UTC
+2022-04-13 10:13:05 +0000 UTC
+2022-04-13 10:13:07 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-04-13 10:13:09 +0000 UTC
+^C
+]0;root@414f3cf73ae0: /usr/src/approot@414f3cf73ae0:/usr/src/app# exit
+exit
+[?2004h]0;dh97@dh97-IdeaPad: ~/code/Docker-Devops[01;32mdh97@dh97-IdeaPad[00m:[01;34m~/code/Docker-Devops[00m$ ex[K[Kdocker container ls
+[?2004l
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED          STATUS          PORTS     NAMES
+414f3cf73ae0   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   33 seconds ago   Up 32 seconds             secret-message
+[?2004h]0;dh97@dh97-IdeaPad: ~/code/Docker-Devops[01;32mdh97@dh97-IdeaPad[00m:[01;34m~/code/Docker-Devops[00m$ docker container stop seret[K[K[Kcret-message 
+[?2004l
+secret-message
+[?2004h]0;dh97@dh97-IdeaPad: ~/code/Docker-Devops[01;32mdh97@dh97-IdeaPad[00m:[01;34m~/code/Docker-Devops[00m$ docker container stop secret-message ls[K
+[?2004l
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;dh97@dh97-IdeaPad: ~/code/Docker-Devops[01;32mdh97@dh97-IdeaPad[00m:[01;34m~/code/Docker-Devops[00m$ exit
+[?2004l
+exit
+
+Script done on 2022-04-13 15:43:47+05:30 [COMMAND_EXIT_CODE="0"]
